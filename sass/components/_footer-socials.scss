@@ -1,0 +1,37 @@
+.footer-socials {
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--color-white);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    justify-content: space-between;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background var(--transition-duration) var(--transition-timing-function);
+
+    &:focus,
+    &:hover {
+      background: var(--accent-color);
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-white);
+  }
+}

@@ -1,0 +1,20 @@
+.modal-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 32px;
+  transition: background var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background: var(--color-back-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

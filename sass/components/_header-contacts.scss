@@ -1,0 +1,56 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  &__item + &__item {
+    margin-left: 50px;
+    margin-right: auto;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-font);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--color-font);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--color-font);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}

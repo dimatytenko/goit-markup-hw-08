@@ -1,0 +1,39 @@
+.filter {
+  .filter__list {
+    display: flex;
+    margin-bottom: 34px;
+    justify-content: center;
+  }
+  .filter__item {
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .filter__button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--color-font-secondary);
+    cursor: pointer;
+    background: var(--color-back-gray);
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+    transition: color var(--transition-duration) var(--transition-timing-function),
+      background var(--transition-duration) var(--transition-timing-function),
+      box-shadow var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      background: var(--accent-color);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
