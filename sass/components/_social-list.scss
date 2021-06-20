@@ -1,6 +1,14 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  &__item {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 
   &__link {
     width: 44px;

@@ -118,59 +118,107 @@
         </div>
       </section>
       <!-- our products -->
-      <!-- <section class="products">
+      <section class="products">
         <div class="container products__contaiter">
           <h2 class="products__title">Чем мы занимаемся</h2>
           <ul class="products__list list">
             <li class="products__item">
               <div class="products__box">
-                <img
-                  src="./images/products/box1.jpg"
-                  alt="The specialist types the code"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/products/box1.webp 1x, ./images/products/box1@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/products/box1.jpg 1x, ./images/products/box1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="#" alt="The specialist types the code" />
+                </picture>
                 <p class="products__desc">Десктопные приложения</p>
               </div>
             </li>
             <li class="products__item">
               <div class="products__box">
-                <img
-                  src="./images/products/box2.jpg"
-                  alt="The specialist analyzes the goods"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/products/box2.webp 1x, ./images/products/box2@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/products/box2.jpg 1x, ./images/products/box2@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="#" alt="The specialist analyzes the goods" />
+                </picture>
                 <p class="products__desc">Мобильные приложения</p>
               </div>
             </li>
             <li class="products__item">
               <div class="products__box">
-                <img
-                  src="./images/products/box3.jpg"
-                  alt="The specialist is engaged in design"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/products/box3.webp 1x, ./images/products/box3@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/products/box3.jpg 1x, ./images/products/box3@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="#" alt="The specialist is engaged in design" />
+                </picture>
                 <p class="products__desc">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- our cpecialists -->
-      <!-- <section class="specialists">
+      <section class="specialists">
         <div class="container section">
           <h3 class="specialists__title">Наша команда</h3>
           <ul class="specialists__list list">
             <li class="specialists__item">
-              <img
-                class="specialists__photo"
-                src="./images/specialists/img1.jpg"
-                alt="Photo of a specialist"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/specialists/photo1-tablet.webp    1x,
+                    ./images/specialists/photo1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo1-tablet.jpg    1x,
+                    ./images/specialists/photo1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo1-mob.webp    1x,
+                    ./images/specialists/photo1-mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo1-mob.jpg    1x,
+                    ./images/specialists/photo1-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="specialists__photo"
+                  src="./images/specialists/photo1-mob.jpg"
+                  alt="Photo of a specialist"
+                />
+              </picture>
               <div class="specialists__content">
                 <h4 class="specialists__name">Игорь Демьяненко</h4>
                 <p class="specialists__profession" lang="en">Product Designer</p>
@@ -207,13 +255,43 @@
               </div>
             </li>
             <li class="specialists__item">
-              <img
-                class="specialists__photo"
-                src="./images/specialists/img2.jpg"
-                alt="Photo of a specialist"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/specialists/photo2-tablet.webp    1x,
+                    ./images/specialists/photo2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo2-tablet.jpg    1x,
+                    ./images/specialists/photo2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo2-mob.webp    1x,
+                    ./images/specialists/photo2-mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo2-mob.jpg    1x,
+                    ./images/specialists/photo2-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="specialists__photo"
+                  src="./images/specialists/photo2-mob.jpg"
+                  alt="Photo of a specialist"
+                />
+              </picture>
               <div class="specialists__content">
                 <h4 class="specialists__name">Ольга Репина</h4>
                 <p class="specialists__profession" lang="en">Frontend Developer</p>
@@ -250,13 +328,43 @@
               </div>
             </li>
             <li class="specialists__item">
-              <img
-                class="specialists__photo"
-                src="./images/specialists/img3.jpg"
-                alt="Photo of a specialist"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/specialists/photo3-tablet.webp    1x,
+                    ./images/specialists/photo3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo3-tablet.jpg    1x,
+                    ./images/specialists/photo3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo3-mob.webp    1x,
+                    ./images/specialists/photo3-mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo3-mob.jpg    1x,
+                    ./images/specialists/photo3-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="specialists__photo"
+                  src="./images/specialists/photo3-mob.jpg"
+                  alt="Photo of a specialist"
+                />
+              </picture>
               <div class="specialists__content">
                 <h4 class="specialists__name">Николай Тарасов</h4>
                 <p class="specialists__profession" lang="en">Marketing</p>
@@ -293,13 +401,43 @@
               </div>
             </li>
             <li class="specialists__item">
-              <img
-                class="specialists__photo"
-                src="./images/specialists/img4.jpg"
-                alt="Photo of a specialist"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/specialists/photo4-tablet.webp    1x,
+                    ./images/specialists/photo4-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo4-tablet.jpg    1x,
+                    ./images/specialists/photo4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo4-mob.webp    1x,
+                    ./images/specialists/photo4-mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/specialists/photo4-mob.jpg    1x,
+                    ./images/specialists/photo4-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="specialists__photo"
+                  src="./images/specialists/photo4-mob.jpg"
+                  alt="Photo of a specialist"
+                />
+              </picture>
               <div class="specialists__content">
                 <h4 class="specialists__name">Михаил Ермаков</h4>
                 <p class="specialists__profession" lang="en">UI Designer</p>
@@ -337,7 +475,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      -->
       <!-- ClIENTS -->
       <!-- <section class="clients">
         <div class="container section">

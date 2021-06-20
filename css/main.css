@@ -241,6 +241,11 @@ img {
     width: 270px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .products {
+    display: none;
+  }
+}
 .products__contaiter {
   padding-top: 0;
   padding-bottom: 94px;
@@ -286,41 +291,30 @@ img {
   background-color: var(--color-back-gray);
 }
 .specialists__title {
-  font-size: 36px;
-  line-height: 1.67;
+  font-size: 28px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-font-secondary);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.specialists__list {
-  display: flex;
-}
-.specialists__item {
-  margin-left: 30px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.specialists__item:first-child {
-  margin-left: 0;
+.specialists__content {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  background-color: var(--color-white);
 }
 .specialists__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.89;
+  line-height: 1.19;
+  color: var(--color-font-secondary);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-font-secondary);
   margin-bottom: 10px;
-}
-.specialists__content {
-  padding: 30px 32px;
-  background-color: var(--color-white);
 }
 .specialists__profession {
   font-size: 16px;
-  line-height: 1.89;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
@@ -561,7 +555,13 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.social-list__item {
+  margin-left: 10px;
+}
+.social-list__item:first-child {
+  margin-left: 0;
 }
 .social-list__link {
   width: 44px;
