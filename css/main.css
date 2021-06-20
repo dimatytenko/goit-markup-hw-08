@@ -71,17 +71,38 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  outline: 1px solid tomato;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .header {
   border-bottom: 1px solid var(--color-header-line);
   background-color: var(--color-white);
@@ -96,7 +117,7 @@ img {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -148,21 +169,11 @@ img {
   fill: var(--color-black);
 }
 
-.skills__list {
-  display: flex;
-}
-.skills__item {
-  width: 270px;
-  margin-left: 30px;
-}
-.skills__item:first-child {
-  margin-left: 0;
-}
 .skills__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--color-back-gray);
   margin-bottom: 30px;
@@ -177,12 +188,14 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-font-secondary);
+  text-align: center;
   margin-bottom: 10px;
 }
 .skills__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-left: 30px;
 }
 
 .products__contaiter {
