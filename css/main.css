@@ -73,6 +73,7 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -230,13 +231,11 @@ img {
     flex-wrap: nowrap;
   }
   .skills__item {
+    margin: 0;
     margin-left: 30px;
   }
   .skills__item:first-child {
     margin-left: 0;
-  }
-  .skills__item:not(:first-child) {
-    margin-top: 0;
   }
   .skills__logo {
     width: 270px;
