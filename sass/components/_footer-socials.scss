@@ -40,3 +40,10 @@
     padding: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    &__title {
+      text-align: left;
+    }
+  }
+}

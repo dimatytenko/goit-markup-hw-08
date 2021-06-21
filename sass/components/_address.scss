@@ -1,4 +1,6 @@
 .address {
+  width: 231px;
+
   &__place {
     font-style: normal;
     font-size: 14px;
@@ -24,29 +26,10 @@
     }
   }
 }
-// .address {
-//   &__place {
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: var(--color-white);
-//     margin-top: 20px;
-//   }
-//   &__item {
-//     margin-top: 9px;
-//   }
-//   &__link {
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: rgba(255, 255, 255, 0.6);
-//     transition: color var(--transition-duration) var(--transition-timing-function);
-
-//     &:hover,
-//     &:focus {
-//       color: var(--accent-color);
-//     }
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .address {
+    &__item {
+      margin-top: 9px;
+    }
+  }
+}

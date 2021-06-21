@@ -460,9 +460,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    justify-content: flex-start;
+    justify-content: start;
   }
   .footer__address {
+    text-align: left;
     margin-right: 70px;
   }
   .footer .footer__email-input {
@@ -721,6 +722,14 @@ img {
     padding: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-socials__title {
+    text-align: left;
+  }
+}
+.address {
+  width: 231px;
+}
 .address__place {
   font-style: normal;
   font-size: 14px;
@@ -744,6 +753,11 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .address__item {
+    margin-top: 9px;
+  }
+}
 .subscribe__title {
   font-weight: 700;
   font-size: 14px;

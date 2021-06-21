@@ -26,9 +26,10 @@
 @media screen and (min-width: 1200px) {
   .footer {
     &__container {
-      justify-content: flex-start;
+      justify-content: start;
     }
     &__address {
+      text-align: left;
       margin-right: 70px;
     }
     .footer__email-input {
