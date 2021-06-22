@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: teal;
+  background-color: var(--color-white);
 
   &__btn {
     border-color: transparent;
@@ -14,6 +14,9 @@
   }
   &__container {
     position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 25px;
   }
 
   &__icon {
@@ -23,5 +26,20 @@
     width: 40px;
     height: 40px;
     fill: var(--color-font-secondary);
+  }
+
+  &__nav-item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__nav-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--color-font-secondary);
   }
 }
