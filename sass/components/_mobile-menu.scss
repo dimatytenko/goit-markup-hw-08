@@ -1,0 +1,27 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: teal;
+
+  &__btn {
+    border-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  &__container {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    fill: var(--color-font-secondary);
+  }
+}
