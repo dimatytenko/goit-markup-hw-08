@@ -13,12 +13,19 @@
       border-color: transparent;
       border: none;
       padding: 0;
+      background-color: transparent;
     }
 
     &__mobile-menu-icon {
       width: 40px;
       height: 40px;
       fill: var(--color-black);
+      transition: fill var(--transition-duration) var(--transition-timing-function);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+      }
     }
   }
 }
