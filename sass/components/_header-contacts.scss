@@ -1,6 +1,9 @@
-.contacts {
-  display: none;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
+
 // .contacts {
 //   display: flex;
 //   margin-left: auto;

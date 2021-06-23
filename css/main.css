@@ -110,17 +110,27 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.header__mobile-menu-btn {
-  border-color: transparent;
-  border: none;
-  padding: 0;
-}
-.header__mobile-menu-icon {
-  width: 40px;
-  height: 40px;
-  fill: var(--color-black);
-}
 
+@media screen and (max-width: 767px) {
+  .header__mobile-menu-btn {
+    border-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .header__mobile-menu-icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-black);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__mobile-menu-btn {
+    display: none;
+  }
+  .header__nav-link {
+    display: none;
+  }
+}
 .hero {
   width: 480px;
   height: 400px;
@@ -595,14 +605,16 @@ img {
   color: var(--color-white);
 }
 
-.menu {
-  display: none;
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
-
-.contacts {
-  display: none;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
-
 .modal-button {
   font-weight: 700;
   font-size: 16px;
@@ -985,44 +997,100 @@ img {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-  background-color: var(--color-white);
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--color-white);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .mobile-menu__btn {
+    border-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 25px;
+  }
+  .mobile-menu__icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    fill: var(--color-font-secondary);
+  }
+  .mobile-menu__nav-item {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__nav-item:last-child {
+    margin-bottom: 0;
+  }
+  .mobile-menu__nav-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--color-font-secondary);
+  }
+  .mobile-menu__contacts {
+    padding-top: 302px;
+    margin-bottom: 64px;
+  }
+  .mobile-menu__contacts-item {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__contacts-item:last-child {
+    margin-bottom: 0;
+  }
+  .mobile-menu__tel-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  .mobile-menu__site-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--color-font);
+  }
+  .mobile-menu__social-list {
+    display: flex;
+  }
+  .mobile-menu__social-list-item:not(:last-child)::after {
+    content: "";
+    width: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mobile-menu__social-list-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
-.mobile-menu__btn {
-  border-color: transparent;
-  border: none;
-  padding: 0;
-}
-.mobile-menu__container {
-  position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 25px;
-}
-.mobile-menu__icon {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  fill: var(--color-font-secondary);
-}
-.mobile-menu__nav-item {
-  margin-bottom: 32px;
-}
-.mobile-menu__nav-item:last-child {
-  margin-bottom: 0;
-}
-.mobile-menu__nav-link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  color: var(--color-font-secondary);
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

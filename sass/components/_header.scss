@@ -6,17 +6,30 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    &__mobile-menu-btn {
+      border-color: transparent;
+      border: none;
+      padding: 0;
+    }
 
-  &__mobile-menu-btn {
-    border-color: transparent;
-    border: none;
-    padding: 0;
+    &__mobile-menu-icon {
+      width: 40px;
+      height: 40px;
+      fill: var(--color-black);
+    }
   }
-
-  &__mobile-menu-icon {
-    width: 40px;
-    height: 40px;
-    fill: var(--color-black);
+}
+@media screen and (min-width: 768px) {
+  .header {
+    &__mobile-menu-btn {
+      display: none;
+    }
+    &__nav-link {
+      display: none;
+    }
   }
 }
 // .header {

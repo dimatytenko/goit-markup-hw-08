@@ -1,6 +1,9 @@
-.menu {
-  display: none;
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
+
 // .menu {
 //   display: flex;
 //   margin-left: 93px;
