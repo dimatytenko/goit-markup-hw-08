@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="header__mobile-menu-btn"  data-menu-button>
+        <button type="button" class="header__mobile-menu-btn" data-menu-button>
           <svg class="header__mobile-menu-icon">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -82,13 +82,19 @@
             </li>
           </ul>
           <ul class="mobile-menu__contacts list">
-             <li class="mobile-menu__contacts-item">
-              <a class="mobile-menu__contacts-link mobile-menu__tel-link link" href="tel:+380961111111">
+            <li class="mobile-menu__contacts-item">
+              <a
+                class="mobile-menu__contacts-link mobile-menu__tel-link link"
+                href="tel:+380961111111"
+              >
                 +38 096 111 11 11</a
               >
             </li>
             <li class="mobile-menu__contacts-item">
-              <a class="mobile-menu__contacts-link mobile-menu__site-link  link" href="mailto:info@devstudio.com">
+              <a
+                class="mobile-menu__contacts-link mobile-menu__site-link link"
+                href="mailto:info@devstudio.com"
+              >
                 info@devstudio.com</a
               >
             </li>
@@ -722,35 +728,35 @@
         </button>
         <form action="#" class="modal-form">
           <p class="modal-form__head">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="modal-form__name">Имя</p>
           <label class="modal-form__field">
-            <p class="modal-form__name">Имя</p>
-            <div class="modal-form__input-wrapper">
+            <span class="modal-form__input-wrapper">
               <input type="text" name="user-name" class="modal-form__input" required />
               <svg class="modal-form__icon">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
+          <p class="modal-form__name">Телефон</p>
           <label class="modal-form__field">
-            <p class="modal-form__name">Телефон</p>
-            <div class="modal-form__input-wrapper">
+            <span class="modal-form__input-wrapper">
               <input type="tel" name="user-phone" class="modal-form__input" required />
               <svg class="modal-form__icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
+          <p class="modal-form__name">Почта</p>
           <label class="modal-form__field">
-            <p class="modal-form__name">Почта</p>
-            <div class="modal-form__input-wrapper">
+            <span class="modal-form__input-wrapper">
               <input type="email" name="user-email" class="modal-form__input" required />
               <svg class="modal-form__icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
+          <p class="modal-form__name">Комментарий</p>
           <label class="modal-form__field">
-            <p class="modal-form__name">Комментарий</p>
             <textarea
               name="user-message"
               class="modal-form__message"

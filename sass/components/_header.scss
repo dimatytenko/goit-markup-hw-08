@@ -1,5 +1,6 @@
 .header {
   padding: 16px 0px;
+  border-bottom: 1px solid #ececec;
 
   &__container {
     display: flex;
@@ -31,6 +32,8 @@
 }
 @media screen and (min-width: 768px) {
   .header {
+    padding: 0;
+
     &__mobile-menu-btn {
       display: none;
     }
@@ -39,12 +42,3 @@
     }
   }
 }
-// .header {
-//   border-bottom: 1px solid var(--color-header-line);
-//   background-color: var(--color-white);
-
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
