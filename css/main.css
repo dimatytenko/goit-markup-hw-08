@@ -33,7 +33,6 @@
 body {
   font-family: var(--main-font);
   color: var(--color-font);
-  overflow-x: hidden;
 }
 
 /* CБРОСЫ */
@@ -73,12 +72,12 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -140,9 +139,10 @@ img {
     display: none;
   }
 }
-.hero__img {
-  width: 480px;
-  height: 400px;
+.hero {
+  margin: 0 auto;
+  max-width: 480px;
+  min-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: url(../images/hero/hero-mob.jpg);
@@ -166,26 +166,26 @@ img {
 }
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero__img {
+  .hero {
     background-image: url(../images/hero/hero-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__img {
+  .hero {
     background-image: url(../images/hero/hero-tablet.jpg);
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero__img {
+  .hero {
     background-image: url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__img {
+  .hero {
     background-image: url(../images/hero/hero-desktop.jpg);
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -198,7 +198,7 @@ img {
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero__img {
+  .hero {
     background-image: url(../images/hero/hero-desktop@2x.jpg);
   }
 }
@@ -903,7 +903,7 @@ img {
   align-items: center;
 }
 .subscribe__email-input {
-  width: 450px;
+  width: 320px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
