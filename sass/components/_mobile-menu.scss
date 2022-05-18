@@ -60,7 +60,7 @@
     }
 
     &__contacts {
-      padding-top: 302px;
+      padding-top: 100px;
       margin-bottom: 64px;
     }
     &__contacts-item {
@@ -86,9 +86,11 @@
     }
     &__social-list {
       display: flex;
+      flex-wrap: wrap;
     }
 
     &__social-list-item {
+      flex-shrink: 0;
       &:not(:last-child)::after {
         content: '';
         width: 22px;

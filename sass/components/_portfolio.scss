@@ -1,8 +1,12 @@
 .projects {
   &__item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
     cursor: pointer;
+
+    & img {
+      width: 100%;
+    }
 
     &:last-child {
       margin-bottom: 0;
