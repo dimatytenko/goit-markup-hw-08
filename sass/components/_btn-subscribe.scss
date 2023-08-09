@@ -2,13 +2,20 @@
   &__btn {
     width: 200px;
     height: 50px;
-    background: #2196f3;
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
     color: var(--color-white);
     padding: 10px 62px 10px 29px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-back-button);
+    }
   }
+
   &__icon {
     position: absolute;
     top: 13px;
